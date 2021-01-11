@@ -1,0 +1,233 @@
+<html> 
+	<head> 
+		<title> Edit Public Events Page  </title> 
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+
+	<body> 
+		
+
+		<p class="menu">
+
+                <a href="InternalMainPage.html">	<button class="button"> Return to Employee Homepage </button></a>
+<br /> <br />		 <a href="http://cgi.sice.indiana.edu/~ppatodi/eventsforadmin.php ">Click Here to see the entire Events Page</a>
+
+       		</p>
+
+
+
+
+
+
+
+		<h1> Change, Update, & Delete Event Items </h1> 
+
+
+		<h2> Use the form below to add events </h2>
+
+		<div class="eventspage">
+			<form action="insertevents.php" method = "post"> 
+				<label for="eventtitle"> Event Title </label>
+				<input type="text" id="eventtitle" name="form_eventtitle" required placeholder="Enter Event Title "> 
+
+				<br />  
+				<br />
+				<br />
+				<label for="eventdate"> Event Date </label>
+				<input type="date" id="eventdate" name="form_eventdate" required> 
+
+
+
+				<br />  
+				<br />
+				<br />
+				<label for="eventlocation"> Enter Event Location </label>
+				<input type="text" id="eventlocation" name="form_eventlocation" required placeholder="Enter Event Location"> 
+
+
+				<br />
+				<br />
+				<br />		
+
+
+				<label for="eventdescription"> Enter Event Description </label>
+				<input type="text" id="eventdescription" name="form_eventdescription" required placeholder="Enter Event Description"> 
+
+
+				<br />
+				<br />
+				<br />				
+				<label for="eventstatus"> Event Status </label> 
+				<select id="eventstatus" name="form_eventstatus"> 
+
+					<option value="scheduledlive"> Scheduled-Live </option> 
+
+					<option value="scheduledpostponed"> Scheduled-Postponed </option>
+
+					<option value="cancelled"> Cancelled </option> 
+
+					<option value="pastevent"> Past Event </option> 
+
+ 
+
+				</select> 
+ 
+
+				<label for="DisplayStatus"> Display Status </label> 
+				<select id="DisplayStatus" name="form_DisplayStatus"> 
+
+					<option value= 1 > Yes </option> 
+
+					<option value= 0 > No </option>
+ 
+
+				</select>
+				<br />
+				<br />
+				<br />
+				
+				<a href="eventupdatedsuccess.html">   <button class="button"> Click to Add Event </button></a>
+
+			</form>
+		</div> 
+				
+
+
+		
+		<br />  
+		<br />  
+		<br />  
+		<br />  
+ 
+
+		<h2> Use the form below to delete items to the events page  </h2>
+		<br /> 
+		<br />  
+
+
+		<div class="eventsdel">
+			<form action="deleteevents.php" method = "post"> 
+				<label for="eventid"> Enter EventID for Event Needing Deletion </label>
+				<input type="int" id="eventid" name="form_eventid" required placeholder="Enter Event ID "> 
+
+				<br />  
+				<br />
+				<br />
+				
+				<a href="EventDeleted.html">   <button class="button"> Click to Delete </button></a>
+
+			</form>
+
+
+
+		<br />  
+		<br />  
+		<br />  
+
+
+
+
+
+
+
+		<h2> Use the form below to change ALL FIELDS in event record </h2>
+
+
+		<br />  
+
+		<br />  
+		<br /> 
+
+		<div class="eventspage">
+			<form action="changeevents.php" method = "post"> 
+
+				<label for="eventid"> Enter Event ID for Event to Change </label>
+				<input type="int" id="eventid" name="form_eventid" required placeholder="Enter Event ID for Event to Change"> 
+
+				<br />  
+				<br />
+				<br />
+
+
+				<label for="eventtitle"> Enter New Event Title </label>
+				<input type="text" id="eventtitle" name="form_eventtitle" required placeholder="Enter New Event Title "> 
+
+				<br />  
+				<br />
+				<br />
+				<label for="eventdate"> Enter New Event Date </label>
+				<input type="date" id="eventdate" name="form_eventdate" required> 
+
+
+
+				<br />  
+				<br />
+				<br />
+				<label for="eventlocation"> Enter New Event Location </label>
+				<input type="text" id="eventlocation" name="form_eventlocation" required placeholder="Enter New  Event Location"> 
+
+
+				<br />
+				<br />
+				<br />		
+
+
+				<label for="eventdescription"> Enter New Event Description </label>
+				<input type="text" id="eventdescription" name="form_eventdescription" required placeholder="Enter New Event Description"> 
+
+
+				<br />
+				<br />
+				<br />				
+				<label for="eventstatus"> Event New Status </label> 
+				<select id="eventstatus" name="form_eventstatus"> 
+
+					<option value="Scheduled-Live"> Scheduled-Live </option> 
+
+					<option value="Scheduled-Postponed"> Scheduled-Postponed </option>
+
+					<option value="Cancelled"> Cancelled </option> 
+
+					<option value="Past-Event"> Past Event </option> 
+
+ 
+
+				</select> 
+
+
+
+				<label for="DisplayStatus"> Display Status </label> 
+				<select id="DisplayStatus" name="form_DisplayStatus"> 
+
+					<option value= 1 > Yes </option> 
+
+					<option value= 0 > No </option>
+ 
+
+				</select> 
+				
+
+				<br />
+				<br />
+				<br />
+				
+				<a href="eventchangedsuccess.html">   <button class="button"> Click to Update Event </button></a>
+
+
+
+
+				<br />
+				<br />
+				<br />		
+
+			</form>
+		</div> 
+				
+		<br />  
+
+
+	</body>
+
+
+</html> 

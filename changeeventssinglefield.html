@@ -1,0 +1,303 @@
+<html> 
+	<head> 
+		<title> Edit Single Field Event Items  </title> 
+		<link href="bootstrap-grid.min.css" rel="stylesheet" type="text/css">
+	</head>
+
+
+	<body> 
+		
+
+		<p class="menu">
+
+                <a href="InternalMainPage.html">	<button class="button"> Return to Employee Homepage </button></a>
+                <a href="changeevents.html">	<button class="button"> Return to Events Update </button></a>		
+	
+
+       		</p>
+
+
+
+
+
+
+
+		<h1> Change Single Field Event Field Items </h1> 
+
+
+
+		
+		
+		
+		
+		
+		
+		<h2> Click Below To Reference Event ID's  </h2>
+
+		<br />  
+
+		<a href="menuitemeventswithid.php">   <button class="button"> Click Here To Reference Events With ID's (For Deletion/Changing)  </button></a>
+
+
+		<br />  
+		<br /> 
+
+
+
+		<h2> Use the form below to edit ONLY Event Name on the Events  </h2>
+
+		<div class="eventspage">
+			<form action="changeeventtitle.php" method = "post"> 
+
+				<label for="eventid"> Enter Event ID for Event to Change </label>
+				<input type="int" id="eventid" name="form_eventid" required placeholder="Enter Event ID for Event to Change"> 
+
+				<br />  
+				<br />
+				<br />
+
+
+				<label for="eventtitle"> Enter New Event Title </label>
+				<input type="text" id="eventtitle" name="form_eventtitle" required placeholder="Enter New Event Title "> 
+
+				<br />  
+				<br />
+				<br />
+
+				<br />
+				<br />
+				
+				<a href="eventchangedsuccess.html">   <button class="button"> Click to Update Event </button></a>
+
+
+
+
+				<br />
+
+
+
+			</form>
+		</div> 
+				
+
+
+
+
+		<h2> Use the form below to edit ONLY Event Date on the Events  </h2>
+
+
+
+
+
+		<div class="eventspage">
+			<form action="changeeventdate.php" method = "post"> 
+
+				<label for="eventid"> Enter Event ID for Event to Change </label>
+				<input type="int" id="eventid" name="form_eventid" required placeholder="Enter Event ID for Event to Change"> 
+
+				<br />  
+				<br />
+				<br />
+
+
+				<label for="eventdate"> Enter New Event Date </label>
+				<input type="date" id="eventdate" name="form_eventdate" required> 
+
+
+
+				<br />  
+				<br />
+				<br />
+
+				<br />
+				<br />
+				
+				<a href="eventchangedsuccess.html">   <button class="button"> Click to Update Event </button></a>
+
+
+
+
+				<br />
+
+
+
+			</form>
+		</div> 
+
+
+
+
+
+
+
+		<h2> Use the form below to edit ONLY Event Location on the Events  </h2>
+
+
+
+		<div class="eventspage">
+			<form action="changeeventlocation.php" method = "post"> 
+
+				<label for="eventid"> Enter Event ID for Event to Change </label>
+				<input type="int" id="eventid" name="form_eventid" required placeholder="Enter Event ID for Event to Change"> 
+
+				<br />  
+				<br />
+
+
+
+				<label for="eventlocation"> Enter New Event Location </label>
+				<input type="text" id="eventlocation" name="form_eventlocation" required placeholder="Enter New  Event Location"> 
+
+
+				<br /> 
+				<br />
+				<br />
+
+				<br />
+				<br />
+				
+				<a href="eventchangedsuccess.html">   <button class="button"> Click to Update Event </button></a>
+
+
+
+
+				<br />
+
+
+
+			</form>
+		</div> 
+
+
+
+
+
+
+
+
+
+
+
+		<h2> Use the form below to edit ONLY Event Description on the Events  </h2>
+
+
+
+
+
+
+		<div class="eventspage">
+			<form action="changeeventdescription.php" method = "post"> 
+
+				<label for="eventid"> Enter Event ID for Event to Change </label>
+				<input type="int" id="eventid" name="form_eventid" required placeholder="Enter Event ID for Event to Change"> 
+
+				<br />  
+				<br />
+				<br />		
+
+
+				<label for="eventdescription"> Enter New Event Description </label>
+				<input type="text" id="eventdescription" name="form_eventdescription" required placeholder="Enter New Event Description"> 
+
+
+				<br />
+				<br />
+				<br />
+
+				<br />
+				<br />
+				
+				<a href="eventchangedsuccess.html">   <button class="button"> Click to Update Event </button></a>
+
+
+
+
+				<br />
+
+
+
+			</form>
+		</div> 
+
+
+
+
+
+		<h2> Use the form below to edit ONLY Event Status on the Events  </h2>
+
+
+
+
+
+		<div class="eventspage">
+			<form action="changeeventstatus.php" method = "post"> 
+
+				<label for="eventid"> Enter Event ID for Event to Change </label>
+				<input type="int" id="eventid" name="form_eventid" required placeholder="Enter Event ID for Event to Change"> 
+
+				<br />  
+				<br />				
+				<label for="eventstatus"> Event New Status </label> 
+				<select id="eventstatus" name="form_eventstatus"> 
+
+					<option value="Scheduled-Live"> Scheduled-Live </option> 
+
+					<option value="Scheduled-Postponed"> Scheduled-Postponed </option>
+
+					<option value="Cancelled"> Cancelled </option> 
+
+					<option value="Past-Event"> Past Event </option> 
+
+ 
+
+				</select> 
+
+
+
+				<br />
+				<br />
+
+				<br />
+				<br />
+				
+				<a href="eventchangedsuccess.html">   <button class="button"> Click to Update Event </button></a>
+
+
+
+
+				<br />
+
+
+
+			</form>
+		</div> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<br />  
+		<br />  
+		<br />  
+		
+		<br />  
+		<br />  
+		<br />  
+
+
+
+	</body>
+
+
+</html> 

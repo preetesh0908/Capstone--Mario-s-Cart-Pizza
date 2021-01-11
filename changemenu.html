@@ -1,0 +1,206 @@
+<html> 
+	<head> 
+		<title> Edit Our Menu Items  </title> 
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+
+	<body> 
+		
+
+		<p class="menu">
+
+                <a href="InternalMainPage.html">	<button class="button"> Return to Employee Homepage </button></a>
+	
+
+       		</p>
+
+
+		<a href="http://cgi.sice.indiana.edu/~ppatodi/menuforadmin.php">Click here to see the entire menu</a> </li>
+
+
+		<h1> Change, Update, & Delete Our Menu Items </h1> 
+
+
+		<h2> Use the form below to add items to the menu  </h2>
+
+		<div class="ourmenuadd">
+			<form action="insertfoodmenu.php" method = "post"> 
+				<label for="foodname"> Food Name </label>
+				<input type="text" id="foodname" name="form_foodname" required placeholder="Enter Food Name "> 
+
+				<br />  
+				<br />
+				<br />
+				<label for="foodprice"> Food Price </label>
+				<input type="int" id="foodprice" name="form_foodprice" required placeholder="Enter Food Price"> 
+
+
+
+				<br />  
+				<br />
+				<br />
+				<label for="fooddescription"> Enter Food Description </label>
+				<input type="text" id="fooddescription" name="form_fooddescription" required placeholder="Enter Food Description"> 
+
+
+				<br />
+				<br />
+				<br />		
+
+				<label for="foodstatus"> Food Status </label> 
+				<select id="foodstatus" name="form_foodstatus"> 
+					<option value="Available"> Available </option> 
+					<option value="Not-Available"> Not Available </option> 
+
+				</select> 
+
+
+
+				<br />
+				<br />
+				<br />		
+
+				<br />
+				<br />
+		
+				<label for="foodcategory"> Select from Food Category Below </label> 
+				<select id="foodcategory" name="form_foodcategory"> 
+					<option value="Main Course"> Main Course </option> 
+					<option value="Drinks"> Drinks </option> 
+					<option value="Appetizers"> Main Course </option> 
+					<option value="Salads"> Salads </option> 
+					<option value="21+ Desserts"> Entrees </option> 
+					<option value="Desserts"> Desserts </option> 
+				</select> 
+
+				<br />  
+				<br />
+								
+				<a href="OurMenuItemAdded.html">   <button class="button"> Click to Add </button></a>
+
+			</form>
+		</div> 
+				
+
+
+		
+		<br />  
+		<br /> 
+		<br />  
+		<br />  
+		<br />  
+ 
+
+
+
+		<h2> Use the form below to delete items from the menu  </h2>
+		<br />  
+		<br />  
+		<br />  
+
+
+
+		<div class="ourmenudelete">
+			<form action="deletefoodmenu.php" method = "post"> 
+				<label for="foodid"> Enter FoodID for Food to Delete </label>
+				<input type="int" id="foodid" name="form_foodid" required placeholder="Enter Food ID "> 
+
+				<br />  
+				<br />
+				<br />
+				
+				<a href="OurMenuItemDeleted.html">   <button class="button"> Click to Delete </button></a>
+
+			</form>
+
+		<br />  
+		<br />  
+		<br />  
+		<br />  
+		
+		
+		
+		<h2> Use the form below to edit ALL FIELD items on the menu  </h2>
+
+		<br /> 
+		<br />  
+		<br /> 
+
+		<div class="ourmenu">
+			<form action="changefoodmenu.php" method = "post">
+			
+				<label for="foodid"> Enter Food ID for Food to Change </label>
+				<input type="int" id="foodid" name="form_foodid" required placeholder="Enter Food ID to Change "> 
+
+				<br />  
+				<br />
+				<br />
+				
+				<label for="foodname"> Enter New Food Name </label>
+				<input type="text" id="foodname" name="form_foodname" required placeholder="Enter New Food Name "> 
+
+				<br />  
+				<br />
+				<br />
+				<label for="foodprice"> Enter New Food Price </label>
+				<input type="text" id="foodprice" name="form_foodprice" required placeholder="Enter New Food Price"> 
+
+
+
+				<br />  
+				<br />
+				<br />
+				<label for="fooddescription"> Enter New Food Description </label>
+				<input type="text" id="fooddescription" name="form_fooddescription" required placeholder="Enter New Food Description"> 
+
+
+				<br />
+				<br />
+				<br />		
+
+				<label for="foodstatus"> Select New Food Status </label> 
+				<select id="foodstatus" name="form_foodstatus"> 
+					<option value="Available"> Available </option> 
+					<option value="Not-Available"> Not Available </option> 
+
+				</select> 
+
+
+
+				<br />
+				<br />
+				<br />
+		
+				<label for="foodcategory"> Select Updated Food Category Below </label> 
+				<select id="foodcategory" name="form_foodcategory"> 
+					<option value="Main Course"> Main Course </option> 
+					<option value="Drinks"> Drinks </option> 
+					<option value="21+ Desserts"> 21+ Desserts </option> 
+					<option value="Salads"> Salads </option> 
+					<option value="Appetizers"> Appetizers </option> 
+					<option value="Desserts"> Desserts </option> 
+				</select> 
+
+				<br />  
+				<br />
+				<br />
+		
+				<a href="OurMenuItemChanged.html">   <button class="button"> Click to Change Item </button></a>
+
+			</form>
+
+		</div> 
+
+
+
+		<br />  
+		<br />  
+		<br /> 
+		<br />  
+		<br />
+
+	</body>
+
+
+</html> 

@@ -1,0 +1,224 @@
+<html> 
+	<head> 
+		<title> Edit Single Field Dinner Menu Items  </title> 
+		<link href="bootstrap-grid.min.css" rel="stylesheet" type="text/css">
+	</head>
+
+
+	<body> 
+		
+
+		<p class="menu">
+
+                <a href="InternalMainPage.html">	<button class="button"> Return to Employee Homepage </button></a>
+                <a href="changedinnermenu.html">	<button class="button"> Return to Dinner Menu Update </button></a>		
+	
+
+       		</p>
+
+
+
+
+
+
+
+		<h1> Change Single Field Dinner Menu Items </h1> 
+
+
+
+		
+		
+		
+		
+		
+		
+		<h2> Click Below To Reference Menu Item ID's  </h2>
+
+		<br />  
+
+		<a href="menuitemeventswithid.php">   <button class="button"> Click Here To Reference Menu Items With ID's (For Deletion/Changing)  </button></a>
+
+
+		<br />  
+		<br /> 
+
+
+
+		<h2> Use the form below to edit ONLY Food Name Field on the dinner menu  </h2>
+
+		<div class="dinnermenu">
+			<form action="changefoodname.php" method = "post">
+			
+				<label for="foodid"> Enter Food ID for Food to Change </label>
+				<input type="int" id="foodid" name="form_foodid" required placeholder="Enter Food ID to Change "> 
+
+				<br />  
+				<br />
+				<br />
+				
+				<label for="foodname"> Enter New Food Name </label>
+				<input type="text" id="foodname" name="form_foodname" required placeholder="Enter New Food Name "> 
+
+
+				<br />
+				<br />
+				
+				<a href="OurMenuItemChanged.html">   <button class="button"> Click to Change Item </button></a>
+
+			</form>
+
+		</div> 
+
+
+
+
+		<h2> Use the form below to edit ONLY Food Price Field on the dinner menu  </h2>
+
+
+
+		<div class="dinnermenu">
+			<form action="changefoodprice.php" method = "post">
+			
+				<label for="foodid"> Enter Food ID for Food to Change </label>
+				<input type="int" id="foodid" name="form_foodid" required placeholder="Enter Food ID to Change "> 
+
+				<br />  
+				<br />
+				<br />
+				<label for="foodprice"> Enter New Food Price </label>
+				<input type="text" id="foodprice" name="form_foodprice" required placeholder="Enter New Food Price"> 
+
+
+
+				<br /> 
+				
+				<a href="OurMenuItemChanged.html">   <button class="button"> Click to Change Item </button></a>
+
+			</form>
+
+		</div> 
+
+
+
+
+		<h2> Use the form below to edit ONLY Food Description Field on the dinner menu  </h2>
+
+
+
+
+		<div class="dinnermenu">
+			<form action="changefooddescription.php" method = "post">
+			
+				<label for="foodid"> Enter Food ID for Food to Change </label>
+				<input type="int" id="foodid" name="form_foodid" required placeholder="Enter Food ID to Change "> 
+
+				<br />  
+				<br />
+				<br />
+				<label for="fooddescription"> Enter New Food Description </label>
+				<input type="text" id="fooddescription" name="form_fooddescription" required placeholder="Enter New Food Description"> 
+
+
+				<br />
+				<br />
+
+				<br /> 
+				
+				<a href="OurMenuItemChanged.html">   <button class="button"> Click to Change Item </button></a>
+
+			</form>
+
+		</div> 
+
+
+
+		<h2> Use the form below to edit ONLY Food Status Field on the dinner menu  </h2>
+
+
+
+
+
+
+		<div class="dinnermenu">
+			<form action="changefoodstatus.php" method = "post">
+			
+				<label for="foodid"> Enter Food ID for Food to Change </label>
+				<input type="int" id="foodid" name="form_foodid" required placeholder="Enter Food ID to Change "> 
+
+				<br />  
+				<br />
+				<br />				
+				<label for="foodstatus"> Select New Food Status </label> 
+				<select id="foodstatus" name="form_foodstatus"> 
+					<option value="Available"> Available </option> 
+					<option value="Not-Available"> Not Available </option> 
+
+				</select> 
+
+
+
+				<br />
+				<br />
+
+				
+				<a href="OurMenuItemChanged.html">   <button class="button"> Click to Change Item </button></a>
+
+			</form>
+
+		</div> 
+
+
+
+
+		<h2> Use the form below to edit ONLY Food Category Field on the dinner menu  </h2>
+
+		<div class="dinnermenu">
+			<form action="changefoodcategory.php" method = "post">
+			
+				<label for="foodid"> Enter Food ID for Food to Change </label>
+				<input type="int" id="foodid" name="form_foodid" required placeholder="Enter Food ID to Change "> 
+
+				<br />  
+				<br />
+
+		
+				<label for="foodcategory"> Select Updated Food Category Below </label> 
+				<select id="foodcategory" name="form_foodcategory"> 
+					<option value="21+ Desserts"> 21+ Desserts </option> 
+					<option value="Drinks"> Drinks </option> 
+					<option value="Appetizers"> Appetizers </option> 
+					<option value="Salads"> Salads </option> 
+					<option value="Main Course"> Main Course </option> 
+					<option value="Desserts"> Desserts </option> 
+				</select> 
+
+				<br />  
+				<br />
+
+				
+				<a href="OurMenuItemChanged.html">   <button class="button"> Click to Change Item </button></a>
+
+			</form>
+
+		</div> 
+
+
+
+
+
+
+
+		<br />  
+		<br />  
+		<br />  
+		
+		<br />  
+		<br />  
+		<br />  
+
+
+
+	</body>
+
+
+</html> 

@@ -1,0 +1,92 @@
+<html> 
+	<head> 
+		<title> Employee Login Page </title> 
+		<link href="bootstrap-grid.min.css" rel="stylesheet" type="text/css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	</head>
+
+
+	<body> 
+		
+
+		<p class="employeelogin">
+
+        <a href="mainpage.html">	    <button class="button"> Return to Homepage </button></a>
+		<a href="AboutUS.html">         <button class="button"> About Our Restaurant </button></a>
+		<a href="News.html">            <button class="button"> Restaurant News </button></a>
+		<a href="Events.html">          <button class="button"> Special Events </button></a>
+		<a href="OurMenu.html">      <button class="button"> Our Menu </button></a>
+		<a href="Contact.html">         <button class="button"> Talk With Us! </button></a>
+		<a href="EmployeeLogin.html">   <button class="button"> Employee Login Page </button></a>
+		
+		
+
+       		</p>
+
+
+
+
+
+
+
+		<h1> Only authorized for Employees </h1> 
+     
+
+
+
+
+
+
+
+		<br />
+
+
+
+
+		<h2> Click the button below to use an authorized Google Account for Employee Sign-In  </h2>
+				
+				
+				
+				
+		<br />
+		<br />
+
+		
+		<meta name="google-signin-client_id" content="490792095256-gleps6aii86i8fk21rve42sktr15f13k.apps.googleusercontent.com">
+		
+		<script src="https://apis.google.com/js/platform.js" async defer></script>
+		
+		
+
+
+		
+		
+		
+		
+		<div class="g-signin2" data-onsuccess="onSignIn"></div>
+		
+		
+		<script type = "text/javascript">
+		function onSignIn(googleUser) {
+			var profile = googleUser.getBasicProfile();
+			console.log('ID: ' + profile.getId()); // Consider using a tokenID.
+			console.log('Name: ' + profile.getName());
+			console.log('Image URL: ' + profile.getImageUrl());
+			console.log('Email: ' + profile.getEmail()); // Null??.
+			var url = "http://cgi.sice.indiana.edu/~ppatodi/employeegooglelogin.php?email="+profile.getEmail()+"&Name="+profile.getName();
+			window.location=url; 
+			
+			
+			
+		}
+		
+
+		</script>
+
+		
+		
+		<br />
+	</body>
+
+
+</html> 
